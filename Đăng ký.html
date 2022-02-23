@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YaMe</title>
+    <!--styles-->
+    <link href="./CSS/styles.css" rel="stylesheet"/>
+    <link href="./CSS/dangky.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="./CSS/tìm kiếm.css">
+    <!--Import Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.0js"></script>
+</head>
+<body>
+<div class="topnav">
+    <a href="Index.html">Trang chủ </a>
+    <a href="./Sản phẩm mới.html">Sản phẩm mới </a>
+    <a href="./Giới thiệu.html">Giới thiệu </a>
+    <a style="float: right">  <div class="search-box">
+        <div class="input-box">
+            <input type="text"
+            placeholder="search something..."
+            >
+        </div>
+    <div class="search-button">
+        <img src="./images/search1.svg" alt="">
+    </div>
+
+    <script>
+        $('.search-box .input-box input').focus(
+            () => {
+                $('.search-box .input-box').addClass('active')
+            }
+        );
+        $('.search-box .input-box input').blur(
+            () => {
+                $('.search-box .input-box'),removeClass('active');
+            }
+        )
+    </script>
+    </div></a>
+    <a href="./Giỏ hàng.html" style="float: right"> Giỏ hàng</a>  
+    <a href="./Đăng ký.html" style="float: right"> Đăng ký</a>
+    <a href="./Đăng nhập.html" style="float: right"> Đăng nhập</a>
+</div>
+
+<img width="100%" src="./images/banner.jpg"/>
+<div class="b102">
+    <form>
+        <div class="form-group">
+            <label>Họ và tên</label><br/>
+            <label><input name="ht" class="form-control" type="text" placeholder="Nguyễn Văn A"></label><br/> 
+        </div>
+        <div class="form-group">
+            <fieldset>
+                <legend>Giới tính:</legend>
+                <label><input name="gt" type="radio" />Nam</label>
+                <label><input name="gt" type="radio" />Nữ</label><br/>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Ngày sinh</label><br/>
+            <input class="form-control" name="ns" type="date">
+        </div>
+        
+        <div class="form-group">
+            <label>Nghề nghiệp</label>
+            <br/>
+            <input name="nn" list="ds" class="form-control">
+            <datalist id="ds">
+                <option value="Diễn Viên"></option>
+                <option value="Công An"></option>
+                <option value="Họa Sĩ"></option>
+                <option value="Nhạc Sĩ"></option>
+                <option value="Đạo Diễn"></option>
+            </datalist>
+        </div>
+        <div class="form-group">
+            <fieldset>               
+                <legend>Sở thích:</legend>
+                <label><input name="st" type="checkbox">Thể thao</label>
+                <label><input name="st" type="checkbox">Du lịch</label>
+                <label><input name="st" type="checkbox">Âm nhạc</label>
+                <label><input name="st" type="checkbox">Ẩm thực</label>
+            </fieldset>
+        </div>
+        <div class="form-group">
+            <label>Ghi chú</label><br/>
+            <label>
+                <textarea class="form-control" name="gc" tabindex="2" rows="5" cols="40"></textarea>
+            </label>
+        </div>
+        <hr>
+        <div class="form-group">
+            <label>
+                <button class="form-button" tabindex="3">Đăng kí</button>
+                <button class="form-button" tabindex="4">Nhập Lại</button>
+            </label>
+        </div>
+    </form>
+</div>
+
+<div class="footer">
+    <img width="10%" src="./images/yame-f-logo-white.png"/>
+    <p> Đặt hàng và thu tiền tận nơi toàn quốc </p>
+    <h2>(028) 73071441</h2>
+    <h2>Liên hệ</h2>
+    <p>Địa chỉ: Shop thời trang YaMe:tpCao Lãnh 66A Tôn Đức Thắng</p>
+    <p>Email:YaMe@gmail.com</p>
+</div>
+
+</body>
+</html>
